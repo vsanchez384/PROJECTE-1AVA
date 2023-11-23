@@ -1,7 +1,5 @@
 # PROJETCE VIDEOJOC (1a Avaluació)
 
-- PROJECTE VIDEOJOCS 
-
 Projecte de la primera avaluació del mòdul Implantació d’Aplicacions Web - 2n ASIX fent ús de PHP.
 
 > Descripció del problema
