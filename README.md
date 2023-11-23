@@ -59,7 +59,6 @@ Depurar la informació que hi ha dins del fitxer.
 - a Funció que tregui per pantalla els videojocs de forma ordenada i apart desi la informació dins d’un fitxer JSON_Resultat_ordenat_alfabetic.json
 - b Implementar-ho mitjançant funcions
 
-=======================================
 
 > A tenir en compte: 
 1. El codi ha d’estar ben estructurat i ha de ser modular , el que implica que és important fer ús de funcions implementades per vosaltres mateixos.
