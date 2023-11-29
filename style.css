@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #add8e6;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* Estilo para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+/* Estilo para las celdas de encabezado */
+th {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Estilo para las celdas de datos alternadas */
+tr:nth-child(even) {
+    background-color: white;
+}
+
+/* Estilo para las celdas de datos */
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Estilo para resaltar al pasar el ratón sobre una fila */
+tr:hover {
+    background-color: gold;
+    transition: background-color 0.3s;
+}
