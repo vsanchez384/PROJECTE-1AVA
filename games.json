@@ -1,452 +1,302 @@
 [
     {
-        "0": 1,
-        "1": 1,
-        "2": 1,
-        "Nom": "The Legend of Zelda: Breath of the Wild",
-        "Desenvolupador": "Nintendo",
-        "Plataforma": "Nintendo Switch",
-        "Llan\u00e7ament": "2017-03-03"
+      "Nom": "The Legend of Zelda: Breath of the Wild",
+      "Desenvolupador": "Nintendo",
+      "Plataforma": "Nintendo Switch",
+      "Llançament": "2017-03-03"
     },
     {
-        "0": 2,
-        "1": 2,
-        "2": 2,
-        "Nom": "The Witcher 3: Wild Hunt",
-        "Desenvolupador": "CD Projekt Red",
-        "Plataforma": "PC, PlayStation 4, Xbox One",
-        "Llan\u00e7ament": "2015-05-19"
+      "Nom": "The Witcher 3: Wild Hunt",
+      "Desenvolupador": "CD Projekt Red",
+      "Plataforma": "PC, PlayStation 4, Xbox One",
+      "Llançament": "2015-05-19"
     },
     {
-        "0": 3,
-        "1": 3,
-        "2": 3,
-        "Nom": "Red Dead Redemption 2",
-        "Desenvolupador": "Rockstar Games",
-        "Plataforma": "PlayStation 4, Xbox One, PC",
-        "Llan\u00e7ament": "2018-10-26"
+      "Nom": "Red Dead Redemption 2",
+      "Desenvolupador": "Rockstar Games",
+      "Plataforma": "PlayStation 4, Xbox One, PC",
+      "Llançament": "2018-10-26"
     },
     {
-        "0": 4,
-        "1": 4,
-        "2": 4,
-        "Nom": "Super Mario Odyssey",
-        "Desenvolupador": "Nintendo",
-        "Plataforma": "Nintendo Switch",
-        "Llan\u00e7ament": "2017-10-27"
+      "Nom": "Super Mario Odyssey",
+      "Desenvolupador": "Nintendo",
+      "Plataforma": "Nintendo Switch",
+      "Llançament": "2017-10-27"
     },
     {
-        "0": 5,
-        "1": 5,
-        "2": 5,
-        "Nom": "Cyberpunk 2077",
-        "Desenvolupador": "CD Projekt Red",
-        "Plataforma": "PC, PlayStation 4, Xbox One",
-        "Llan\u00e7ament": "2020-12-10"
+      "Nom": "Cyberpunk 2077",
+      "Desenvolupador": "CD Projekt Red",
+      "Plataforma": "PC, PlayStation 4, Xbox One",
+      "Llançament": "2020-12-10"
     },
     {
-        "0": 6,
-        "1": 6,
-        "2": 6,
-        "Nom": "God of War",
-        "Desenvolupador": "Santa Monica Studio",
-        "Plataforma": "PlayStation 4, PlayStation 5",
-        "Llan\u00e7ament": "2018-04-20"
+      "Nom": "God of War",
+      "Desenvolupador": "Santa Monica Studio",
+      "Plataforma": "PlayStation 4, PlayStation 5",
+      "Llançament": "2018-04-20"
     },
     {
-        "0": 7,
-        "1": 7,
-        "2": 7,
-        "Nom": "Horizon Zero Dawn",
-        "Desenvolupador": "Guerrilla Games",
-        "Plataforma": "PlayStation 4, PC",
-        "Llan\u00e7ament": "2017-02-28"
+      "Nom": "Horizon Zero Dawn",
+      "Desenvolupador": "Guerrilla Games",
+      "Plataforma": "PlayStation 4, PC",
+      "Llançament": "2017-02-28"
     },
     {
-        "0": 8,
-        "1": 8,
-        "2": 8,
-        "Nom": "The Elder Scrolls V: Skyrim",
-        "Desenvolupador": "Bethesda Game Studios",
-        "Plataforma": "PC, PlayStation 3, Xbox 360",
-        "Llan\u00e7ament": "2011-11-11"
+      "Nom": "The Elder Scrolls V: Skyrim",
+      "Desenvolupador": "Bethesda Game Studios",
+      "Plataforma": "PC, PlayStation 3, Xbox 360",
+      "Llançament": "2011-11-11"
     },
     {
-        "0": 9,
-        "1": 9,
-        "2": 9,
-        "Nom": "Final Fantasy VII Remake",
-        "Desenvolupador": "Square Enix",
-        "Plataforma": "PlayStation 4",
-        "Llan\u00e7ament": "2020-04-10"
+      "Nom": "Final Fantasy VII Remake",
+      "Desenvolupador": "Square Enix",
+      "Plataforma": "PlayStation 4",
+      "Llançament": "2020-04-10"
     },
     {
-        "0": 10,
-        "1": 10,
-        "2": 10,
-        "Nom": "Minecraft",
-        "Desenvolupador": "Mojang",
-        "Plataforma": "PC, PlayStation, Xbox, Switch, etc.",
-        "Llan\u00e7ament": "2011-11-18"
+      "Nom": "Minecraft",
+      "Desenvolupador": "Mojang",
+      "Plataforma": "PC, PlayStation, Xbox, Switch, etc.",
+      "Llançament": "2011-11-18"
     },
     {
-        "0": 11,
-        "1": 11,
-        "2": 11,
-        "Nom": "The Last of Us Part II",
-        "Desenvolupador": "Naughty Dog",
-        "Plataforma": "PlayStation 4, PlayStation 5",
-        "Llan\u00e7ament": "2020-06-19"
+      "Nom": "The Last of Us Part II",
+      "Desenvolupador": "Naughty Dog",
+      "Plataforma": "PlayStation 4, PlayStation 5",
+      "Llançament": "2020-06-19"
     },
     {
-        "0": 12,
-        "1": 12,
-        "2": 12,
-        "Nom": "Genshin Impact",
-        "Desenvolupador": "miHoYo",
-        "Plataforma": "PC, PlayStation, Switch, iOS, Android",
-        "Llan\u00e7ament": "2020-09-28"
+      "Nom": "Genshin Impact",
+      "Desenvolupador": "miHoYo",
+      "Plataforma": "PC, PlayStation, Switch, iOS, Android",
+      "Llançament": "2020-09-28"
     },
     {
-        "0": 13,
-        "1": 13,
-        "2": 13,
-        "Nom": "Assassin's Creed Valhalla",
-        "Desenvolupador": "Ubisoft",
-        "Plataforma": "PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X\/S",
-        "Llan\u00e7ament": "2020-11-10"
+      "Nom": "Assassin's Creed Valhalla",
+      "Desenvolupador": "Ubisoft",
+      "Plataforma": "PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S",
+      "Llançament": "2020-11-10"
     },
     {
-        "0": 14,
-        "1": 14,
-        "2": 14,
-        "Nom": "Pok\u00e9mon FireRed \/ LeafGreen",
-        "Desenvolupador": "Game Freak",
-        "Plataforma": "Game Boy Advance",
-        "Llan\u00e7ament": "2004-01-29"
+      "Nom": "Pokémon FireRed / LeafGreen",
+      "Desenvolupador": "Game Freak",
+      "Plataforma": "Game Boy Advance",
+      "Llançament": "2004-01-29"
     },
     {
-        "0": 15,
-        "1": 15,
-        "2": 15,
-        "Nom": "Animal Crossing: New Horizons",
-        "Desenvolupador": "Nintendo",
-        "Plataforma": "Nintendo Switch",
-        "Llan\u00e7ament": "2020-03-20"
+      "Nom": "Animal Crossing: New Horizons",
+      "Desenvolupador": "Nintendo",
+      "Plataforma": "Nintendo Switch",
+      "Llançament": "2020-03-20"
     },
     {
-        "0": 16,
-        "1": 16,
-        "2": 16,
-        "Nom": "Demon's Souls",
-        "Desenvolupador": "Bluepoint Games \/ SIE Japan Studio",
-        "Plataforma": "PlayStation 5",
-        "Llan\u00e7ament": "2020-11-12"
+      "Nom": "Demon's Souls",
+      "Desenvolupador": "Bluepoint Games / SIE Japan Studio",
+      "Plataforma": "PlayStation 5",
+      "Llançament": "2020-11-12"
     },
     {
-        "0": 17,
-        "1": 17,
-        "2": 17,
-        "Nom": "Call of Duty: Modern Warfare (2019)",
-        "Desenvolupador": "Infinity Ward",
-        "Plataforma": "PC, PlayStation 4, Xbox One",
-        "Llan\u00e7ament": "2019-10-25"
+      "Nom": "Call of Duty: Modern Warfare (2019)",
+      "Desenvolupador": "Infinity Ward",
+      "Plataforma": "PC, PlayStation 4, Xbox One",
+      "Llançament": "2019-10-25"
     },
     {
-        "0": 18,
-        "1": 18,
-        "2": 18,
-        "Nom": "Marvel's Spider-Man: Miles Morales",
-        "Desenvolupador": "Insomniac Games",
-        "Plataforma": "PlayStation 4, PlayStation 5",
-        "Llan\u00e7ament": "2020-11-12"
+      "Nom": "Marvel's Spider-Man: Miles Morales",
+      "Desenvolupador": "Insomniac Games",
+      "Plataforma": "PlayStation 4, PlayStation 5",
+      "Llançament": "2020-11-12"
     },
     {
-        "0": 19,
-        "1": 19,
-        "2": 19,
-        "Nom": "Hades",
-        "Desenvolupador": "Supergiant Games",
-        "Plataforma": "PC, Switch",
-        "Llan\u00e7ament": "2020-09-17"
+      "Nom": "Hades",
+      "Desenvolupador": "Supergiant Games",
+      "Plataforma": "PC, Switch",
+      "Llançament": "2020-09-17"
     },
     {
-        "0": 20,
-        "1": 20,
-        "2": 20,
-        "Nom": "Death Stranding",
-        "Desenvolupador": "Kojima Productions",
-        "Plataforma": "PlayStation 4, PC",
-        "Llan\u00e7ament": "2019-11-08"
+      "Nom": "Death Stranding",
+      "Desenvolupador": "Kojima Productions",
+      "Plataforma": "PlayStation 4, PC",
+      "Llançament": "2019-11-08"
     },
     {
-        "0": 21,
-        "1": 21,
-        "2": 21,
-        "Nom": "Stardew Valley",
-        "Desenvolupador": "ConcernedApe",
-        "Plataforma": "PC, PlayStation, Xbox, Switch, iOS, Android",
-        "Llan\u00e7ament": "2016-02-26"
+      "Nom": "Stardew Valley",
+      "Desenvolupador": "ConcernedApe",
+      "Plataforma": "PC, PlayStation, Xbox, Switch, iOS, Android",
+      "Llançament": "2016-02-26"
     },
     {
-        "0": 22,
-        "1": 22,
-        "2": 22,
-        "Nom": "Ghost of Tsushima",
-        "Desenvolupador": "Sucker Punch Productions",
-        "Plataforma": "PlayStation 4",
-        "Llan\u00e7ament": "2020-07-17"
+      "Nom": "Ghost of Tsushima",
+      "Desenvolupador": "Sucker Punch Productions",
+      "Plataforma": "PlayStation 4",
+      "Llançament": "2020-07-17"
     },
     {
-        "0": 23,
-        "1": 23,
-        "2": 23,
-        "Nom": "Resident Evil Village",
-        "Desenvolupador": "Capcom",
-        "Plataforma": "PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X\/S",
-        "Llan\u00e7ament": "2021-05-07"
+      "Nom": "Resident Evil Village",
+      "Desenvolupador": "Capcom",
+      "Plataforma": "PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S",
+      "Llançament": "2021-05-07"
     },
     {
-        "0": 24,
-        "1": 24,
-        "2": 24,
-        "Nom": "Sekiro: Shadows Die Twice",
-        "Desenvolupador": "FromSoftware",
-        "Plataforma": "PC, PlayStation 4, Xbox One",
-        "Llan\u00e7ament": "2019-03-22"
+      "Nom": "Sekiro: Shadows Die Twice",
+      "Desenvolupador": "FromSoftware",
+      "Plataforma": "PC, PlayStation 4, Xbox One",
+      "Llançament": "2019-03-22"
     },
     {
-        "0": 25,
-        "1": 25,
-        "2": 25,
-        "Nom": "DOOM Eternal",
-        "Desenvolupador": "id Software",
-        "Plataforma": "PC, PlayStation 4, Xbox One",
-        "Llan\u00e7ament": "2020-03-20"
+      "Nom": "DOOM Eternal",
+      "Desenvolupador": "id Software",
+      "Plataforma": "PC, PlayStation 4, Xbox One",
+      "Llançament": "2020-03-20"
     },
     {
-        "0": 26,
-        "1": 26,
-        "2": 26,
-        "Nom": "Ratchet & Clank: Rift Apart",
-        "Desenvolupador": "Insomniac Games",
-        "Plataforma": "PlayStation 5",
-        "Llan\u00e7ament": "2021-06-11"
+      "Nom": "Ratchet & Clank: Rift Apart",
+      "Desenvolupador": "Insomniac Games",
+      "Plataforma": "PlayStation 5",
+      "Llançament": "2021-06-11"
     },
     {
-        "0": 27,
-        "1": 27,
-        "2": 27,
-        "Nom": "It Takes Two",
-        "Desenvolupador": "Hazelight Studios",
-        "Plataforma": "PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X\/S",
-        "Llan\u00e7ament": "2021-03-26"
+      "Nom": "It Takes Two",
+      "Desenvolupador": "Hazelight Studios",
+      "Plataforma": "PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S",
+      "Llançament": "2021-03-26"
     },
     {
-        "0": 28,
-        "1": 28,
-        "2": 28,
-        "Nom": "Pok\u00e9mon Diamond\/Pearl",
-        "Desenvolupador": "Game Freak",
-        "Plataforma": "Nintendo DS",
-        "Llan\u00e7ament": "2006-09-28"
+      "Nom": "Pokémon Diamond/Pearl",
+      "Desenvolupador": "Game Freak",
+      "Plataforma": "Nintendo DS",
+      "Llançament": "2006-09-28"
     },
     {
-        "0": 29,
-        "1": 29,
-        "2": 29,
-        "Nom": "Hitman 3",
-        "Desenvolupador": "IO Interactive",
-        "Plataforma": "PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X\/S",
-        "Llan\u00e7ament": "2021-01-20"
+      "Nom": "Hitman 3",
+      "Desenvolupador": "IO Interactive",
+      "Plataforma": "PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S",
+      "Llançament": "2021-01-20"
     },
     {
-        "0": 30,
-        "1": 30,
-        "2": 30,
-        "Nom": "Persona 5 Royal",
-        "Desenvolupador": "Atlus",
-        "Plataforma": "PlayStation 4",
-        "Llan\u00e7ament": "2020-03-31"
+      "Nom": "Persona 5 Royal",
+      "Desenvolupador": "Atlus",
+      "Plataforma": "PlayStation 4",
+      "Llançament": "2020-03-31"
     },
     {
-        "0": 31,
-        "1": 31,
-        "2": 31,
-        "Nom": "Metroid Dread",
-        "Desenvolupador": "Nintendo",
-        "Plataforma": "Nintendo Switch",
-        "Llan\u00e7ament": "2021-10-08"
+      "Nom": "Metroid Dread",
+      "Desenvolupador": "Nintendo",
+      "Plataforma": "Nintendo Switch",
+      "Llançament": "2021-10-08"
     },
     {
-        "0": 32,
-        "1": 32,
-        "2": 32,
-        "Nom": "Monster Hunter Rise",
-        "Desenvolupador": "Capcom",
-        "Plataforma": "Nintendo Switch, PC",
-        "Llan\u00e7ament": "2021-03-26"
+      "Nom": "Monster Hunter Rise",
+      "Desenvolupador": "Capcom",
+      "Plataforma": "Nintendo Switch, PC",
+      "Llançament": "2021-03-26"
     },
     {
-        "0": 33,
-        "1": 33,
-        "2": 33,
-        "Nom": "Little Nightmares II",
-        "Desenvolupador": "Tarsier Studios",
-        "Plataforma": "PC, PlayStation, Xbox, Switch",
-        "Llan\u00e7ament": "2021-02-11"
+      "Nom": "Little Nightmares II",
+      "Desenvolupador": "Tarsier Studios",
+      "Plataforma": "PC, PlayStation, Xbox, Switch",
+      "Llançament": "2021-02-11"
     },
     {
-        "0": 34,
-        "1": 34,
-        "2": 34,
-        "Nom": "Outriders",
-        "Desenvolupador": "People Can Fly",
-        "Plataforma": "PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X\/S",
-        "Llan\u00e7ament": "2021-04-01"
+      "Nom": "Outriders",
+      "Desenvolupador": "People Can Fly",
+      "Plataforma": "PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S",
+      "Llançament": "2021-04-01"
     },
     {
-        "0": 35,
-        "1": 35,
-        "2": 35,
-        "Nom": "Kena: Bridge of Spirits",
-        "Desenvolupador": "Ember Lab",
-        "Plataforma": "PC, PlayStation 4, PlayStation 5",
-        "Llan\u00e7ament": "2021-09-21"
+      "Nom": "Kena: Bridge of Spirits",
+      "Desenvolupador": "Ember Lab",
+      "Plataforma": "PC, PlayStation 4, PlayStation 5",
+      "Llançament": "2021-09-21"
     },
     {
-        "0": 36,
-        "1": 36,
-        "2": 36,
-        "Nom": "Mass Effect Legendary Edition",
-        "Desenvolupador": "BioWare",
-        "Plataforma": "PC, PlayStation 4, Xbox One",
-        "Llan\u00e7ament": "2021-05-14"
+      "Nom": "Mass Effect Legendary Edition",
+      "Desenvolupador": "BioWare",
+      "Plataforma": "PC, PlayStation 4, Xbox One",
+      "Llançament": "2021-05-14"
     },
     {
-        "0": 37,
-        "1": 37,
-        "2": 37,
-        "Nom": "Chicory: A Colorful Tale",
-        "Desenvolupador": "Greg Lobanov",
-        "Plataforma": "PC, PlayStation, Switch",
-        "Llan\u00e7ament": "2021-06-10"
+      "Nom": "Chicory: A Colorful Tale",
+      "Desenvolupador": "Greg Lobanov",
+      "Plataforma": "PC, PlayStation, Switch",
+      "Llançament": "2021-06-10"
     },
     {
-        "0": 38,
-        "1": 38,
-        "2": 38,
-        "Nom": "Scarlet Nexus",
-        "Desenvolupador": "Bandai Namco Entertainment",
-        "Plataforma": "PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X\/S",
-        "Llan\u00e7ament": "2021-06-25"
+      "Nom": "Scarlet Nexus",
+      "Desenvolupador": "Bandai Namco Entertainment",
+      "Plataforma": "PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S",
+      "Llançament": "2021-06-25"
     },
     {
-        "0": 39,
-        "1": 39,
-        "2": 39,
-        "Nom": "New Pok\u00e9mon Snap",
-        "Desenvolupador": "Bandai Namco Studios",
-        "Plataforma": "Nintendo Switch",
-        "Llan\u00e7ament": "2021-04-30"
+      "Nom": "New Pokémon Snap",
+      "Desenvolupador": "Bandai Namco Studios",
+      "Plataforma": "Nintendo Switch",
+      "Llançament": "2021-04-30"
     },
     {
-        "0": 40,
-        "1": 40,
-        "2": 40,
-        "Nom": "Back 4 Blood",
-        "Desenvolupador": "Turtle Rock Studios",
-        "Plataforma": "PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X\/S",
-        "Llan\u00e7ament": "2021-10-12"
+      "Nom": "Back 4 Blood",
+      "Desenvolupador": "Turtle Rock Studios",
+      "Plataforma": "PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S",
+      "Llançament": "2021-10-12"
     },
     {
-        "0": 41,
-        "1": 41,
-        "2": 41,
-        "Nom": "NieR Replicant ver.1.22474487139...",
-        "Desenvolupador": "Toylogic",
-        "Plataforma": "PC, PlayStation 4, Xbox One",
-        "Llan\u00e7ament": "2021-04-23"
+      "Nom": "NieR Replicant ver.1.22474487139...",
+      "Desenvolupador": "Toylogic",
+      "Plataforma": "PC, PlayStation 4, Xbox One",
+      "Llançament": "2021-04-23"
     },
     {
-        "0": 42,
-        "1": 42,
-        "2": 42,
-        "Nom": "Pok\u00e9mon Black\/White",
-        "Desenvolupador": "Game Freak",
-        "Plataforma": "Nintendo DS",
-        "Llan\u00e7ament": "2010-03-04"
+      "Nom": "Pokémon Black/White",
+      "Desenvolupador": "Game Freak",
+      "Plataforma": "Nintendo DS",
+      "Llançament": "2010-03-04"
     },
     {
-        "0": 43,
-        "1": 43,
-        "2": 43,
-        "Nom": "Riders Republic",
-        "Desenvolupador": "Ubisoft Annecy",
-        "Plataforma": "PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X\/S",
-        "Llan\u00e7ament": "2021-10-28"
+      "Nom": "Riders Republic",
+      "Desenvolupador": "Ubisoft Annecy",
+      "Plataforma": "PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S",
+      "Llançament": "2021-10-28"
     },
     {
-        "0": 44,
-        "1": 44,
-        "2": 44,
-        "Nom": "The Medium",
-        "Desenvolupador": "Bloober Team",
-        "Plataforma": "PC, Xbox Series X\/S",
-        "Llan\u00e7ament": "2021-01-28"
+      "Nom": "The Medium",
+      "Desenvolupador": "Bloober Team",
+      "Plataforma": "PC, Xbox Series X/S",
+      "Llançament": "2021-01-28"
     },
     {
-        "0": 45,
-        "1": 45,
-        "2": 45,
-        "Nom": "Resident Evil 3 Remake",
-        "Desenvolupador": "Capcom",
-        "Plataforma": "PC, PlayStation 4, Xbox One",
-        "Llan\u00e7ament": "2020-04-03"
+      "Nom": "Resident Evil 3 Remake",
+      "Desenvolupador": "Capcom",
+      "Plataforma": "PC, PlayStation 4, Xbox One",
+      "Llançament": "2020-04-03"
     },
     {
-        "0": 46,
-        "1": 46,
-        "2": 46,
-        "Nom": "Bravely Default II",
-        "Desenvolupador": "Silicon Studio \/ Claytechworks",
-        "Plataforma": "Nintendo Switch",
-        "Llan\u00e7ament": "2021-02-26"
+      "Nom": "Bravely Default II",
+      "Desenvolupador": "Silicon Studio / Claytechworks",
+      "Plataforma": "Nintendo Switch",
+      "Llançament": "2021-02-26"
     },
     {
-        "0": 47,
-        "1": 47,
-        "2": 47,
-        "Nom": "Age of Empires IV",
-        "Desenvolupador": "Relic Entertainment",
-        "Plataforma": "PC",
-        "Llan\u00e7ament": "2021-10-28"
+      "Nom": "Age of Empires IV",
+      "Desenvolupador": "Relic Entertainment",
+      "Plataforma": "PC",
+      "Llançament": "2021-10-28"
     },
     {
-        "0": 48,
-        "1": 48,
-        "2": 48,
-        "Nom": "Halo Infinite",
-        "Desenvolupador": "343 Industries",
-        "Plataforma": "PC, Xbox Series X\/S",
-        "Llan\u00e7ament": "2021-12-08"
+      "Nom": "Halo Infinite",
+      "Desenvolupador": "343 Industries",
+      "Plataforma": "PC, Xbox Series X/S",
+      "Llançament": "2021-12-08"
     },
     {
-        "0": 49,
-        "1": 49,
-        "2": 49,
-        "Nom": "Far Cry 6",
-        "Desenvolupador": "Ubisoft",
-        "Plataforma": "PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X\/S",
-        "Llan\u00e7ament": "2021-10-07"
+      "Nom": "Far Cry 6",
+      "Desenvolupador": "Ubisoft",
+      "Plataforma": "PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S",
+      "Llançament": "2021-10-07"
     },
     {
-        "0": 50,
-        "1": 50,
-        "2": 50,
-        "Nom": "Deathloop",
-        "Desenvolupador": "Arkane Studios",
-        "Plataforma": "PC, PlayStation 5",
-        "Llan\u00e7ament": "2021-09-14"
+      "Nom": "Deathloop",
+      "Desenvolupador": "Arkane Studios",
+      "Plataforma": "PC, PlayStation 5",
+      "Llançament": "2021-09-14"
     }
-]
+  ]
