@@ -2,6 +2,7 @@
 
 function imprimir_index()
 {
+    echo '<link rel="stylesheet" href="style.css">';
     echo "<h1>PROJECTE 1A AVALUACIÓ</h1>
     <h2>Víctor / Pau</h2>";
 
