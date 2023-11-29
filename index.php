@@ -9,7 +9,6 @@
 </head>
 
 <body>
-    <h1>Projecte videojocs Victor Sanchez i Pau Mayol</h1>
 
     
 </body>
