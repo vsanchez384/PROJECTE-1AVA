@@ -23,7 +23,7 @@ table {
 
 /* Estilo para las celdas de encabezado */
 th {
-    background-color: navy;
+    background-color: #304D6D;
     color: white;
     padding: 10px;
     text-align: left;
@@ -31,7 +31,10 @@ th {
 
 /* Estilo para las celdas de datos alternadas */
 tr:nth-child(even) {
-    background-color: white;
+    background-color: #C0A9B0;
+}
+tr{
+    background-color: teal;
 }
 
 /* Estilo para las celdas de datos */
@@ -42,6 +45,6 @@ td {
 
 /* Estilo para resaltar al pasar el ratón sobre una fila */
 tr:hover {
-    background-color: gold;
+    background-color: #82A0BC;
     transition: background-color 0.3s;
 }
