@@ -1,31 +1,34 @@
 <?php
 
+// Funcio de mostrar l'index
 function mostrar_index()
 {
-    echo '<link rel="stylesheet" href="style.css">';
-    echo "<h1>PROJECTE 1A AVALUACIÓ</h1>
+    echo "<h1>PROJECTE 1ª AVALUACIÓ</h1>
     <h2>Víctor / Pau</h2>";
-
     echo "<a href='projecte.php'>Index</a>";
     echo "<a href='projecte.php?funcio=1'>Funcio 1</a>";
     echo "<a href='projecte.php?funcio=2'>Funcio 2</a>";
     echo "<a href='projecte.php?funcio=3'>Funcio 3</a>";
     echo "<a href='projecte.php?funcio=4'>Funcio 4</a>";
     echo "<a href='projecte.php?funcio=5'>Funcio 5</a>";
+    
 }
 
+// Carrega de fitxer
 function carrega_fitxer($fitxer)
 {
     $jsonString = file_get_contents($fitxer);
 
     $arrayAsociatiu = json_decode($jsonString, true);
 
+    // Verifica si hi ha errors
     if (json_last_error() !== JSON_ERROR_NONE) {
         die('Error JSON: ' . json_last_error_msg());
     }
     return $arrayAsociatiu;
 }
 
+// Funcionalitat 1: mostra de videojocs
 function mostra_videojocs($videojocs)
 {
     echo "<table border='black'>";
@@ -41,16 +44,19 @@ function mostra_videojocs($videojocs)
     echo "</table>";
 }
 
+// Funcionalitat 1: mostra de videojocs
 function mostrar_videojocs($videojocs)
 {
     echo "<table border='black'>";
 
+    // Imprimir la taula
     echo "<tr>";
     foreach (array_keys($videojocs[0]) as $header) {
         echo "<th>$header</th>";
     }
     echo "</tr>";
 
+    // Contingut de la taula
     foreach ($videojocs as $videojoc) {
         echo "<tr>";
         foreach ($videojoc as $valor) {
@@ -61,6 +67,7 @@ function mostrar_videojocs($videojocs)
 
     echo "</table>";
 }
+
 
 function id_maxim($videojocs)
 {
@@ -77,6 +84,7 @@ function id_maxim($videojocs)
     return $id_maxim;
 }
 
+// Funcionalita 2: assignar codi
 function assigna_codi($id_maxim)
 {
     $jsonString = file_get_contents('games.json');
@@ -85,7 +93,7 @@ function assigna_codi($id_maxim)
     foreach ($arrayAsociatiu as &$columna) {
         if (!isset($columna['ID'])) {
             $id_maxim++;
-            $columna['ID'] = $id_maxim;
+            $columna = ['ID' => $id_maxim] + $columna;
         }
     }
 
@@ -93,10 +101,23 @@ function assigna_codi($id_maxim)
     file_put_contents('games.json', $newJsonString);
 }
 
+
+// Funcionalitat 3: eliminar videojocs
 function eliminar_videojocs()
 {
     $jsonString = file_get_contents('games.json');
+
+    // Verificar si se pudo leer el archivo correctamente
+    if ($jsonString === false) {
+        die('Error: No se pudo leer el archivo games.json.');
+    }
+
     $arrayAsociatiu = json_decode($jsonString, true);
+
+    // Verificar si la decodificación JSON fue exitosa
+    if (json_last_error() !== JSON_ERROR_NONE) {
+        die('Error JSON en el archivo games.json: ' . json_last_error_msg());
+    }
 
     $nuevosJuegos = array();
     foreach ($arrayAsociatiu as $columna) {
@@ -105,8 +126,10 @@ function eliminar_videojocs()
         }
     }
 
+    // Ordenar por ID
     ksort($nuevosJuegos);
 
+    // Eliminar videojuegos
     foreach ($nuevosJuegos as $key => $columna) {
         if ($columna['Plataforma'] == 'PC' && $columna['Llançament'] < '2019-01-01') {
             unset($nuevosJuegos[$key]);
@@ -114,9 +137,16 @@ function eliminar_videojocs()
     }
 
     $newJsonString = json_encode(array_values($nuevosJuegos), JSON_PRETTY_PRINT | JSON_INVALID_UTF8_IGNORE);
-    file_put_contents('games.json', $newJsonString);
+
+    // Verificar si se pudo escribir el nuevo archivo correctamente
+    if ($newJsonString === false) {
+        die('Error: No se pudo escribir el nuevo archivo JSON_Resultat_Eliminar.json.');
+    }
+
+    file_put_contents('JSON_Resultat_Eliminar.json', $newJsonString);
 }
 
+// Funcionalitat 4: Afegir data expiració
 function data_expiracio()
 {
     $jsonString = file_get_contents('games.json');
@@ -131,6 +161,7 @@ function data_expiracio()
     file_put_contents('JSON_Resultat_Data_Expiració.json', $newJsonString);
 }
 
+// Funcionalitat 5: Comprovar repetits
 function comprovarDuplicats($videojocs, $campDuplicats) {
     $vistos = [];
 
@@ -163,6 +194,22 @@ if ($resultat === 1) {
 } else {
     echo "No hi ha registres repetits pel camp $campDuplicats.\n";
 }
+
+
+// Funcionalitat 6: Comprovar repetits ampliada
+
+
+
+// Funcionalitat 7: Eliminar repetits
+
+
+
+// Funcionalitat 8: Videojoc més modern i més antic
+
+
+
+// Funcionalitat 9: Ordenació alfabètica de videojocs
+
 
 
 ?>
