@@ -134,4 +134,6 @@ function data_expiracio()
     $newJsonString = json_encode($arrayAsociatiu, JSON_PRETTY_PRINT | JSON_INVALID_UTF8_IGNORE);
     file_put_contents('JSON_Resultat_Data_Expiració.json', $newJsonString);
 }
+
+
 ?>

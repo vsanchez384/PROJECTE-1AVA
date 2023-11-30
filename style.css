@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #2f85a1;
+    background-color: #EFF9F0;
 }
 
 h1 {
@@ -23,18 +23,19 @@ table {
 
 /* Estilo para las celdas de encabezado */
 th {
-    background-color: #304D6D;
-    color: white;
+    background-color: #9CF6F6;
+    color: #333;
     padding: 10px;
     text-align: left;
 }
 
 /* Estilo para las celdas de datos alternadas */
 tr:nth-child(even) {
-    background-color: #C0A9B0;
+    background-color: #F56960;
 }
 tr{
-    background-color: teal;
+    background-color: #F3C98B;
+    color: #333
 }
 
 /* Estilo para las celdas de datos */
