@@ -27,6 +27,9 @@ if (isset($_GET['funcio'])) {
     } elseif ($_GET['funcio'] == 4) {
         data_expiracio();
         mostrar_videojocs(carrega_fitxer('JSON_Resultat_Data_Expiració.json'));
+    } elseif ($_GET['funcio'] == 5) {
+        data_expiracio();
+        mostrar_videojocs(carrega_fitxer('games.json'));
     }
 }
 ?>

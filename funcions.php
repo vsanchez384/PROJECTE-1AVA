@@ -11,6 +11,7 @@ function mostrar_index()
     echo "<a href='projecte.php?funcio=2'>Funcio 2</a>";
     echo "<a href='projecte.php?funcio=3'>Funcio 3</a>";
     echo "<a href='projecte.php?funcio=4'>Funcio 4</a>";
+    echo "<a href='projecte.php?funcio=5'>Funcio 5</a>";
 }
 
 function carrega_fitxer($fitxer)
@@ -19,7 +20,6 @@ function carrega_fitxer($fitxer)
 
     $arrayAsociatiu = json_decode($jsonString, true);
 
-    // Verifica si hay errores durante la decodificación
     if (json_last_error() !== JSON_ERROR_NONE) {
         die('Error JSON: ' . json_last_error_msg());
     }
@@ -45,14 +45,12 @@ function mostrar_videojocs($videojocs)
 {
     echo "<table border='black'>";
 
-    // Imprimir la taula
     echo "<tr>";
     foreach (array_keys($videojocs[0]) as $header) {
         echo "<th>$header</th>";
     }
     echo "</tr>";
 
-    // Contingut de la taula
     foreach ($videojocs as $videojoc) {
         echo "<tr>";
         foreach ($videojoc as $valor) {
@@ -107,10 +105,8 @@ function eliminar_videojocs()
         }
     }
 
-    // Ordenar por ID
     ksort($nuevosJuegos);
 
-    // Eliminar videojuegos
     foreach ($nuevosJuegos as $key => $columna) {
         if ($columna['Plataforma'] == 'PC' && $columna['Llançament'] < '2019-01-01') {
             unset($nuevosJuegos[$key]);
@@ -133,6 +129,39 @@ function data_expiracio()
 
     $newJsonString = json_encode($arrayAsociatiu, JSON_PRETTY_PRINT | JSON_INVALID_UTF8_IGNORE);
     file_put_contents('JSON_Resultat_Data_Expiració.json', $newJsonString);
+}
+
+function comprovarDuplicats($videojocs, $campDuplicats) {
+    $vistos = [];
+
+    foreach ($videojocs as $videojoc) {
+        $valorCamp = $videojoc[$campDuplicats];
+
+        if (in_array($valorCamp, $vistos)) {
+            return 1;  
+        }
+
+        $vistos[] = $valorCamp;
+    }
+
+    return 0; 
+}
+
+$jsonString = file_get_contents('games.json');
+$videojocs = json_decode($jsonString, true);
+
+if (json_last_error() !== JSON_ERROR_NONE) {
+    die('Error JSON: ' . json_last_error_msg());
+}
+
+$campDuplicats = 'ID';
+
+$resultat = comprovarDuplicats($videojocs, $campDuplicats);
+
+if ($resultat === 1) {
+    echo "Hi ha registres repetits pel camp $campDuplicats.\n";
+} else {
+    echo "No hi ha registres repetits pel camp $campDuplicats.\n";
 }
 
 
