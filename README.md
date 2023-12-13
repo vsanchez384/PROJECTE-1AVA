@@ -1,4 +1,4 @@
-# PROJETCE (1a Avaluació)
+# PROJETCE (1a Avaluació) Victor i Pau
 
 Projecte de la primera avaluació del mòdul Implantació d’Aplicacions Web - 2n ASIX fent ús de PHP.
 
