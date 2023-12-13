@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: rgb(255, 174, 127);
+    background-color: rgb(165, 241, 102);
     text-align: center; /* Centra el texto en el cuerpo */
 }
 
@@ -26,8 +26,8 @@ table {
 
 /* Estil Cel·les */
 th {
-    background-color: rgb(193, 237, 0);
-    color: rgb(0, 0, 0);
+    background-color: navy;
+    color: gainsboro;
     padding: 10px;
     text-align: left;
 }
