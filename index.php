@@ -12,7 +12,7 @@
 
     <h1>Benvingut al PROJECTE PHP DE LA 1ª AVALUCAIÓ</h1>
 
-    <p>Aquesta es la pàgina principal, selecciona una funcionalitat:</p>
+    <p>Aquesta es la pàgina principal</p>
 
     <ul>
         <li><a href="projecte.php">Anar a la pàgina del projecte</a></li>
