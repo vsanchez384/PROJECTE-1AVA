@@ -65,3 +65,5 @@ Depurar la informació que hi ha dins del fitxer.
 4. Els blocs de codi han d’estar documentats. 
 5. Fer ús de GitHub a cada sessió de classe. Al final de cada sessió s’ha de fer commit al GitHub.
 6. La pràctica es durà a terme en grups de 2 persones, que podreu formar vosaltres mateixos. 
+
+HOLA
