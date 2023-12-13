@@ -11,7 +11,11 @@ function mostrar_index()
     echo "<a href='projecte.php?funcio=3'>Funcio 3</a>";
     echo "<a href='projecte.php?funcio=4'>Funcio 4</a>";
     echo "<a href='projecte.php?funcio=5'>Funcio 5</a>";
-    
+    echo "<a href='projecte.php?funcio=6'>Funcio 6</a>";
+    echo "<a href='projecte.php?funcio=7'>Funcio 7</a>";
+    echo "<a href='projecte.php?funcio=8'>Funcio 8</a>";
+    echo "<a href='projecte.php?funcio=9'>Funcio 9</a>";
+    echo "<a href='projecte.php?funcio=10'>Funcio 10</a>";
 }
 
 // Carrega de fitxer
@@ -67,7 +71,6 @@ function mostrar_videojocs($videojocs)
 
     echo "</table>";
 }
-
 
 function id_maxim($videojocs)
 {
@@ -162,7 +165,7 @@ function data_expiracio()
 }
 
 // Funcionalitat 5: Comprovar repetits
-function comprovarDuplicats($videojocs, $campDuplicats) {
+function comprovar_repetits($videojocs, $campDuplicats) {
     $vistos = [];
 
     foreach ($videojocs as $videojoc) {
@@ -178,38 +181,71 @@ function comprovarDuplicats($videojocs, $campDuplicats) {
     return 0; 
 }
 
-$jsonString = file_get_contents('games.json');
-$videojocs = json_decode($jsonString, true);
+// Funcionalitat 6: Comprovar repetits ampliada
+function comprovarDuplicatsAmpliada($videojocs, $campDuplicats) {
+    $vistos = [];
 
-if (json_last_error() !== JSON_ERROR_NONE) {
-    die('Error JSON: ' . json_last_error_msg());
-}
+    foreach ($videojocs as $videojoc) {
+        $valorCamp = $videojoc[$campDuplicats];
 
-$campDuplicats = 'ID';
+        if (isset($vistos[$valorCamp])) {
+            echo "Hi ha registres repetits pel camp $campDuplicats: $valorCamp.\n";
+        }
 
-$resultat = comprovarDuplicats($videojocs, $campDuplicats);
+        $vistos[$valorCamp] = true;
+    }
 
-if ($resultat === 1) {
-    echo "Hi ha registres repetits pel camp $campDuplicats.\n";
-} else {
     echo "No hi ha registres repetits pel camp $campDuplicats.\n";
 }
 
-
-// Funcionalitat 6: Comprovar repetits ampliada
-
-
-
 // Funcionalitat 7: Eliminar repetits
+function eliminarDuplicats($videojocs) {
+    $repetits = [];
 
+    foreach ($videojocs as $videojoc) {
+        $id = $videojoc['ID'];
 
+        if (isset($repetits[$id])) {
+            unset($repetits[$id]);
+        } else {
+            $repetits[$id] = $videojoc;
+        }
+    }
+
+    $newJsonString = json_encode(array_values($repetits), JSON_PRETTY_PRINT | JSON_INVALID_UTF8_IGNORE);
+    file_put_contents('JSON_Resultat_Eliminar_Duplicats.json', $newJsonString);
+}
 
 // Funcionalitat 8: Videojoc més modern i més antic
+function videojoc_mes_modern_i_mes_antic($videojocs) {
+    $videojoc_mes_modern = $videojocs[0];
+    $videojoc_mes_antic = $videojocs[0];
 
+    foreach ($videojocs as $videojoc) {
+        if ($videojoc['Llançament'] > $videojoc_mes_modern['Llançament']) {
+            $videojoc_mes_modern = $videojoc;
+        }
 
+        if ($videojoc['Llançament'] < $videojoc_mes_antic['Llançament']) {
+            $videojoc_mes_antic = $videojoc;
+        }
+    }
+
+    echo "Videojoc més modern:\n";
+    print_r($videojoc_mes_modern);
+
+    echo "Videojoc més antic:\n";
+    print_r($videojoc_mes_antic);
+}
 
 // Funcionalitat 9: Ordenació alfabètica de videojocs
+function ordenacioAlfabetica($videojocs) {
+    usort($videojocs, function ($a, $b) {
+        return $a['Nom'] <=> $b['Nom'];
+    });
 
-
+    echo "Videojocs ordenats alfabèticament:\n";
+    print_r($videojocs);
+}
 
 ?>

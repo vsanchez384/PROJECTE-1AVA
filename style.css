@@ -1,41 +1,40 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #EFF9F0;
+    background-color: rgb(255, 174, 127);
+    text-align: center; /* Centra el texto en el cuerpo */
 }
 
-h1 {
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    color: black;
+}
+
+h1, h2 {
     color: #333;
-    text-align: center;
 }
 
-h2 {
-    color: #333;
-    text-align: center;
-}
-
-/* Estilo para la tabla */
+/* Estil taula */
 table {
-    width: 100%;
+    width: 80%; /* Ajusta el ancho de la tabla */
+    margin: 20px auto; /* Centra la tabla horizontalmente */
     border-collapse: collapse;
-    margin: 20px 0;
+    background-color: white; /* Color de fondo para la tabla */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-/* Estilo para las celdas de encabezado */
+/* Estil Cel·les */
 th {
-    background-color: #9CF6F6;
-    color: #333;
+    background-color: rgb(193, 237, 0);
+    color: rgb(0, 0, 0);
     padding: 10px;
     text-align: left;
 }
 
 /* Estilo para las celdas de datos alternadas */
 tr:nth-child(even) {
-    background-color: #F56960;
-}
-tr{
-    background-color: #F3C98B;
-    color: #333
+    background-color: rgb(183, 193, 232);
 }
 
 /* Estilo para las celdas de datos */
@@ -46,6 +45,6 @@ td {
 
 /* Estilo para resaltar al pasar el ratón sobre una fila */
 tr:hover {
-    background-color: #82A0BC;
+    background-color: rgb(0, 221, 255);
     transition: background-color 0.3s;
 }
