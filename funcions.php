@@ -119,7 +119,7 @@ function eliminar_videojocs()
 
     // Verificar si la decodificación JSON fue exitosa
     if (json_last_error() !== JSON_ERROR_NONE) {
-        die('Error JSON en el archivo games.json: ' . json_last_error_msg());
+        die('Error JSON en el fitxer games.json: ' . json_last_error_msg());
     }
 
     $nuevosJuegos = array();
@@ -216,59 +216,96 @@ function eliminarDuplicats($videojocs) {
     file_put_contents('JSON_Resultat_Eliminar_Duplicats.json', $newJsonString);
 }
 
-// Funcionalitat 8: Videojoc més modern i més antic
+// Funcionalitat 8: Videojoc mes modern
 function videojoc_mes_modern_i_mes_antic($videojocs) {
+    echo "<table border='1'>";
+    echo "<tr><th>Videojoc més modern</th></tr>";
+    echo "<tr><td>";
+    echo "<table>";
+    echo "<tr><th>Nom</th><th>Desenvolupador</th><th>Plataforma</th><th>Llançament</th></tr>";
     $videojoc_mes_modern = $videojocs[0];
-    $videojoc_mes_antic = $videojocs[0];
-
     foreach ($videojocs as $videojoc) {
         if ($videojoc['Llançament'] > $videojoc_mes_modern['Llançament']) {
             $videojoc_mes_modern = $videojoc;
         }
+    }
+    echo "<tr>";
+    echo "<td>".$videojoc_mes_modern['Nom']."</td>";
+    echo "<td>".$videojoc_mes_modern['Desenvolupador']."</td>";
+    echo "<td>".$videojoc_mes_modern['Plataforma']."</td>";
+    echo "<td>".$videojoc_mes_modern['Llançament']."</td>";
+    echo "</tr>";
+    echo "</table>";
+    echo "</td></tr>";
 
+    echo "<tr><th>Videojoc més antic</th></tr>";
+    echo "<tr><td>";
+    echo "<table>";
+    echo "<tr><th>Nom</th><th>Desenvolupador</th><th>Plataforma</th><th>Llançament</th></tr>";
+    $videojoc_mes_antic = $videojocs[0];
+    foreach ($videojocs as $videojoc) {
         if ($videojoc['Llançament'] < $videojoc_mes_antic['Llançament']) {
             $videojoc_mes_antic = $videojoc;
         }
     }
-
-    echo "Videojoc més modern:\n";
-    print_r($videojoc_mes_modern);
-
-    echo "Videojoc més antic:\n";
-    print_r($videojoc_mes_antic);
+    echo "<tr>";
+    echo "<td>".$videojoc_mes_antic['Nom']."</td>";
+    echo "<td>".$videojoc_mes_antic['Desenvolupador']."</td>";
+    echo "<td>".$videojoc_mes_antic['Plataforma']."</td>";
+    echo "<td>".$videojoc_mes_antic['Llançament']."</td>";
+    echo "</tr>";
+    echo "</table>";
+    echo "</td></tr>";
+    echo "</table>";
 }
 
-// Funcionalitat 9: Ordenació alfabètica de videojocs
+// Funcionalitat 9: Ordenació alfabética de videojocs
 function ordenacioAlfabetica($videojocs) {
     usort($videojocs, function ($a, $b) {
         return $a['Nom'] <=> $b['Nom'];
     });
 
-    echo "Videojocs ordenats alfabèticament:\n";
-    print_r($videojocs);
+    echo "<table border='1'>";
+    echo "<tr><th>Videojocs ordenadats alfabéticament</th></tr>";
+    echo "<tr><td>";
+    echo "<table>";
+    echo "<tr><th>Nom</th><th>Desenvolupador</th><th>Plataforma</th><th>Llançament</th></tr>";
+    foreach ($videojocs as $videojoc) {
+        echo "<tr>";
+        echo "<td>".$videojoc['Nom']."</td>";
+        echo "<td>".$videojoc['Desenvolupador']."</td>";
+        echo "<td>".$videojoc['Plataforma']."</td>";
+        echo "<td>".$videojoc['Llançament']."</td>";
+        echo "</tr>";
+    }
+    echo "</table>";
+    echo "</td></tr>";
+    echo "</table>";
 }
 
-// Funcionalitat 10: Comptar els videojocs de cada any
+// Funcionalidad 10: Comptar videojocs per any
 function comptar_videojocs_per_any($videojocs) {
     $anys = array();
-    
-    // Recorrer cada videojoc
+
     foreach ($videojocs as $videojoc) {
-        // Obtenir l'any de llançament del videojoc
         $llancament = $videojoc['Llançament'];
         $any = date('Y', strtotime($llancament));
-        
-        // Incrementar el contador per a l'any corresponent
+
         if (isset($anys[$any])) {
             $anys[$any]++;
         } else {
             $anys[$any] = 1;
         }
     }
-    
-    // Mostrar el nombre de videojocs per any
+
+    echo "<table border='1'>";
+    echo "<tr><th>Any</th><th>Nombre de videojocs</th></tr>";
     foreach ($anys as $any => $nombre_videojocs) {
-        echo "Any: $any - Nombre de videojocs: $nombre_videojocs\n";
+        echo "<tr>";
+        echo "<td>".$any."</td>";
+        echo "<td>".$nombre_videojocs."</td>";
+        echo "</tr>";
     }
+    echo "</table>";
 }
 ?>

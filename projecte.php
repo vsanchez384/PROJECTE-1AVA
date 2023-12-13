@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica 1 PHP</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
 <?php
 require('funcions.php');
-
 mostrar_index();
-
 if (isset($_GET['funcio'])) {
     if ($_GET['funcio'] == 1) {
         mostrar_videojocs(carrega_fitxer('games.json'));
@@ -42,14 +37,9 @@ if (isset($_GET['funcio'])) {
     } elseif ($_GET['funcio'] == 9) {
         ordenacioAlfabetica(carrega_fitxer('games.json'));
     } elseif ($_GET['funcio'] == 10) {
-        comprovarDuplicatsAmpliada(carrega_fitxer('games.json'), 'ID');
-        comprovarDuplicatsAmpliada(carrega_fitxer('games.json'), 'Nom');
-        comprovarDuplicatsAmpliada(carrega_fitxer('games.json'), 'Desenvolupador');
-        comprovarDuplicatsAmpliada(carrega_fitxer('games.json'), 'Plataforma');
-        comprovarDuplicatsAmpliada(carrega_fitxer('games.json'), 'Llançament');
+        comptar_videojocs_per_any(carrega_fitxer('games.json'));
     }
 }
 ?>
 </body>
-
 </html>
