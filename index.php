@@ -10,14 +10,16 @@
 
 <body>
 
-    <h1>Benvingut al PRJECTE PHP DE LA 1ª AVALUCAIÓ</h1>
+    <h1>Benvingut al PROJECTE PHP DE LA 1ª AVALUCAIÓ</h1>
 
     <p>Aquesta es la pàgina principal, selecciona una funcionalitat:</p>
 
     <ul>
-        <li><a href="projecte.php">Anar a la pàgina del prjecte</a></li>
+        <li><a href="projecte.php">Anar a la pàgina del projecte</a></li>
     </ul>
 
+
+    <img src="img\fernando-alonso-mercadona1.jpg" alt="El nano" width="455px">
 </body>
 
 </html>
