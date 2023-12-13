@@ -129,10 +129,10 @@ function eliminar_videojocs()
         }
     }
 
-    // Ordenar por ID
+    // Ordenar per ID
     ksort($nuevosJuegos);
 
-    // Eliminar videojuegos
+    // Eliminar videojocs
     foreach ($nuevosJuegos as $key => $columna) {
         if ($columna['Plataforma'] == 'PC' && $columna['Llançament'] < '2019-01-01') {
             unset($nuevosJuegos[$key]);
@@ -141,9 +141,9 @@ function eliminar_videojocs()
 
     $newJsonString = json_encode(array_values($nuevosJuegos), JSON_PRETTY_PRINT | JSON_INVALID_UTF8_IGNORE);
 
-    // Verificar si se pudo escribir el nuevo archivo correctamente
+    // Verificar si se pot reescirure el JSON
     if ($newJsonString === false) {
-        die('Error: No se pudo escribir el nuevo archivo JSON_Resultat_Eliminar.json.');
+        die('Error: No se ha pogut escriure en fitxer JSON_Resultat_Eliminar.json.');
     }
 
     file_put_contents('JSON_Resultat_Eliminar.json', $newJsonString);
@@ -248,4 +248,27 @@ function ordenacioAlfabetica($videojocs) {
     print_r($videojocs);
 }
 
+// Funcionalitat 10: Comptar els videojocs de cada any
+function comptar_videojocs_per_any($videojocs) {
+    $anys = array();
+    
+    // Recorrer cada videojoc
+    foreach ($videojocs as $videojoc) {
+        // Obtenir l'any de llançament del videojoc
+        $llancament = $videojoc['Llançament'];
+        $any = date('Y', strtotime($llancament));
+        
+        // Incrementar el contador per a l'any corresponent
+        if (isset($anys[$any])) {
+            $anys[$any]++;
+        } else {
+            $anys[$any] = 1;
+        }
+    }
+    
+    // Mostrar el nombre de videojocs per any
+    foreach ($anys as $any => $nombre_videojocs) {
+        echo "Any: $any - Nombre de videojocs: $nombre_videojocs\n";
+    }
+}
 ?>
