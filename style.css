@@ -45,6 +45,6 @@ td {
 
 /* Estilo para resaltar al pasar el ratón sobre una fila */
 tr:hover {
-    background-color: rgb(0, 221, 255);
+    background-color: rgb(165, 241, 102);
     transition: background-color 0.3s;
 }
